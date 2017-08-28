@@ -1,5 +1,6 @@
 FROM ubuntu:16.04
 MAINTAINER vaseem<vaseemkti@gmail.com>
+RUN apt-get -y update
 RUN apt-get install -y python python-dev
 RUN mkdir /home/vas
 ADD . /home/vas
